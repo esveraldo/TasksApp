@@ -1,0 +1,6 @@
+@TasksApp.Services.Api_HostAddress = http://localhost:5056
+
+GET {{TasksApp.Services.Api_HostAddress}}/swagger/
+Accept: application/json
+
+###
