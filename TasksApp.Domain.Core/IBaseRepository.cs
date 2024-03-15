@@ -8,9 +8,9 @@ namespace TasksApp.Domain.Core
 {
     public interface IBaseRepository<TEntity, TKey> : IDisposable where TEntity : class
     {
-        void Create(TEntity entity);
-        void Update(TEntity entity);
-        void Delete(TEntity entity);
+        Task Create(TEntity entity);
+        Task Update(TEntity entity);
+        Task Delete(TEntity entity);
 
         List<TEntity> GetAll();
         TEntity GetById(TKey id);
