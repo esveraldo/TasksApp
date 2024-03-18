@@ -25,11 +25,11 @@ namespace TasksApp.Application.Services
             _projectTasksDomainService = projectTasksDomainService;
         }
 
-        public async Task<string> Add(UpdateProjectTaskDto updateProjectTaskDto)
+        public async Task<string> Add(CreateProjectTaskDto createProjectTaskDto)
         {
             string msg;
             var mapper = MapperConfig.InitializeAutomapper();
-            var projectTask = mapper.Map<ProjectTask>(updateProjectTaskDto);
+            var projectTask = mapper.Map<ProjectTask>(createProjectTaskDto);
 
             var result = _projectTasksDomainService.NewProjectTask(projectTask);
 

@@ -10,5 +10,6 @@ namespace TasksApp.Domain.Interfaces.Repositories
 {
     public interface IUserRepository : IBaseRepository<User, Guid>
     {
+        List<User> GetAll();
     }
 }

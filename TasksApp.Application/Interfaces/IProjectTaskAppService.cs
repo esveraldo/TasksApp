@@ -7,7 +7,7 @@ namespace TasksApp.Application.Interfaces
 {
     public interface IProjectTaskAppService
     {
-        Task<string> Add(UpdateProjectTaskDto updateProjectTaskDto);
+        Task<string> Add(CreateProjectTaskDto createProjectTaskDto);
         Task Update(UpdateProjectTaskDto updateProjectTaskDto);
         Task Remove(int id);
         Task<List<GetProjectTaskDto>> GetAll();
