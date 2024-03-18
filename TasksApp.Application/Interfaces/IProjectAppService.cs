@@ -10,7 +10,7 @@ namespace TasksApp.Application.Interfaces
 {
     public interface IProjectAppService
     {
-        Task Add(CreateProjectDto createProjectDto);
+        Task<string> Add(CreateProjectDto createProjectDto);
         Task<List<GetProjectsDto>> GetAll();
     }
 }

@@ -8,5 +8,6 @@ namespace TasksApp.Application.Dtos.ProjectTasks
 {
     public class RemoveProjectTaskDto
     {
+        public int Id { get; set; }
     }
 }

@@ -25,12 +25,17 @@ namespace TasksApp.Application.Services
             _projectDomainService = projectDomainService;
         }
 
-        public async Task Add(CreateProjectDto createProjectDto)
+        public async Task<string> Add(CreateProjectDto createProjectDto)
         {
+            string msg;
             var mapper = MapperConfig.InitializeAutomapper();
             var project = mapper.Map<Project>(createProjectDto);
 
-            await _projectDomainService.NewProject(project);
+            var result = _projectDomainService.NewProject(project);
+
+            msg = result.Id != null ? "Projeto criado com sucesso." : "Houve um erro ao criar o projeto";
+
+            return msg;
         }
 
         public async Task<List<GetProjectsDto>> GetAll()
