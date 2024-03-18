@@ -9,6 +9,11 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["TasksApp.Services.Api/TasksApp.Services.Api.csproj", "TasksApp.Services.Api/"]
+COPY ["TasksApp.Infraestructure.IoC/TasksApp.Infraestructure.IoC.csproj", "TasksApp.Infraestructure.IoC/"]
+COPY ["TasksApp.Application/TasksApp.Application.csproj", "TasksApp.Application/"]
+COPY ["TasksApp.Domain/TasksApp.Domain.csproj", "TasksApp.Domain/"]
+COPY ["TasksApp.Domain.Core/TasksApp.Domain.Core.csproj", "TasksApp.Domain.Core/"]
+COPY ["TasksApp.Infraestructure.Data/TasksApp.Infraestructure.Data.csproj", "TasksApp.Infraestructure.Data/"]
 RUN dotnet restore "./TasksApp.Services.Api/./TasksApp.Services.Api.csproj"
 COPY . .
 WORKDIR "/src/TasksApp.Services.Api"

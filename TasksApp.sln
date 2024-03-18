@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksApp.Services.Api", "TasksApp.Services.Api\TasksApp.Services.Api.csproj", "{587D8DF7-0E6D-465B-93D8-4C5C3B789464}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksApp.Services.Api", "TasksApp.Services.Api\TasksApp.Services.Api.csproj", "{587D8DF7-0E6D-465B-93D8-4C5C3B789464}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{59DEA6FE-B249-4EE0-8F15-3BD5E31A1BD5}"
 EndProject
@@ -21,19 +21,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrationTest", "Integrat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{53DA71B4-49EA-4C3C-98CD-839623B8F130}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksApp.Application", "TasksApp.Application\TasksApp.Application.csproj", "{D145DF5C-5630-4A16-9AC2-0E3C081BBD5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksApp.Application", "TasksApp.Application\TasksApp.Application.csproj", "{D145DF5C-5630-4A16-9AC2-0E3C081BBD5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksApp.Domain", "TasksApp.Domain\TasksApp.Domain.csproj", "{FF0DD2D6-8002-4E57-A287-87251086C03C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksApp.Domain", "TasksApp.Domain\TasksApp.Domain.csproj", "{FF0DD2D6-8002-4E57-A287-87251086C03C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksApp.Domain.Core", "TasksApp.Domain.Core\TasksApp.Domain.Core.csproj", "{5D733C16-6D5A-4A07-B156-47EBE359D62F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksApp.Domain.Core", "TasksApp.Domain.Core\TasksApp.Domain.Core.csproj", "{5D733C16-6D5A-4A07-B156-47EBE359D62F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksApp.Infraestructure.Data", "TasksApp.Infraestructure.Data\TasksApp.Infraestructure.Data.csproj", "{93EE8F71-A091-4BBB-ABBA-799536AFEB42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksApp.Infraestructure.Data", "TasksApp.Infraestructure.Data\TasksApp.Infraestructure.Data.csproj", "{93EE8F71-A091-4BBB-ABBA-799536AFEB42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksApp.Infraestructure.IoC", "TasksApp.Infraestructure.IoC\TasksApp.Infraestructure.IoC.csproj", "{2C558E08-787D-4020-BBDC-CF79E6A0495B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksApp.Infraestructure.IoC", "TasksApp.Infraestructure.IoC\TasksApp.Infraestructure.IoC.csproj", "{2C558E08-787D-4020-BBDC-CF79E6A0495B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksApp.Integration.Tests", "TasksApp.Integration.Tests\TasksApp.Integration.Tests.csproj", "{BC700B5B-330F-472A-A529-224D5C63A898}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksApp.Integration.Tests", "TasksApp.Integration.Tests\TasksApp.Integration.Tests.csproj", "{BC700B5B-330F-472A-A529-224D5C63A898}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksApp.Unit.Tests", "TasksApp.Unit.Tests\TasksApp.Unit.Tests.csproj", "{C9B4B2FD-2996-4DFC-A19C-F92BAC77C1F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksApp.Unit.Tests", "TasksApp.Unit.Tests\TasksApp.Unit.Tests.csproj", "{C9B4B2FD-2996-4DFC-A19C-F92BAC77C1F7}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{38D7E41D-5469-4BDE-88C6-6BCEBCCE2DA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +75,10 @@ Global
 		{C9B4B2FD-2996-4DFC-A19C-F92BAC77C1F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9B4B2FD-2996-4DFC-A19C-F92BAC77C1F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9B4B2FD-2996-4DFC-A19C-F92BAC77C1F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38D7E41D-5469-4BDE-88C6-6BCEBCCE2DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38D7E41D-5469-4BDE-88C6-6BCEBCCE2DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38D7E41D-5469-4BDE-88C6-6BCEBCCE2DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38D7E41D-5469-4BDE-88C6-6BCEBCCE2DA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

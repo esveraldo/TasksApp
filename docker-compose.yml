@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  tasksapp.services.api:
+    image: ${DOCKER_REGISTRY-}tasksappservicesapi
+    build:
+      context: .
+      dockerfile: TasksApp.Services.Api/Dockerfile
