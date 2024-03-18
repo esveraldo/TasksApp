@@ -15,9 +15,12 @@ namespace TasksApp.Infraestructure.Data.Repositories
             _dataContext = dataContext;
         }
 
-        public override List<User> GetAll()
+        public List<User> GetAllUsersWithProjects()
         {
-            return _dataContext.Users.Include(x => x.Projects).ToList();
+            return _dataContext.Users
+            .Include(u => u.Projects)
+            .ThenInclude(p => p.ProjectTasks)
+            .ToList();
         }
     }
 }

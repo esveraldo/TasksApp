@@ -15,7 +15,7 @@ namespace TasksApp.Domain.Services
 
         public async Task<List<User>> GetUsers()
         {
-            return _unitOfWork.userRepository.GetAll().ToList();
+            return _unitOfWork.userRepository.GetAllUsersWithProjects();
         }
 
         public async Task NewUser(User user)

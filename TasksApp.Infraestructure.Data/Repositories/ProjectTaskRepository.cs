@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TasksApp.Domain.Entities;
+﻿using TasksApp.Domain.Entities;
 using TasksApp.Domain.Interfaces.Repositories;
 using TasksApp.Infraestructure.Data.Contexts;
 

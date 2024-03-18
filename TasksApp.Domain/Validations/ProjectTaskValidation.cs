@@ -12,6 +12,11 @@ namespace TasksApp.Domain.Validations
                 .NotEmpty()
                 .WithMessage("Id é obrigatório");
 
+            RuleFor(p => p.Priority)
+                .NotNull()
+                .NotEmpty()
+                .WithMessage("A prioridade é obrigatório");
+
             RuleFor(p => p.Status)
                 .NotNull()
                 .NotEmpty()
