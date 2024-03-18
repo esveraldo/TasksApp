@@ -23,6 +23,7 @@ namespace TasksApp.Infraestructure.IoC.Extensions
             services.AddScoped<IProjectAppService, ProjectAppService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IProjectTasksDomainService, ProjectTasksDomainService>();
+            services.AddScoped<IProjectTaskAppService, ProjectTaskAppService>();
 
 
             return services;

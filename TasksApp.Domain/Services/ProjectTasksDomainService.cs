@@ -25,7 +25,7 @@ namespace TasksApp.Domain.Services
         }
 
         public async Task NewProjectTask(ProjectTask projectTasks)
-        {;
+        {
             await _unitOfWork.projectTaskRepository.Create(projectTasks);
             _unitOfWork.SaveChanges();
         }

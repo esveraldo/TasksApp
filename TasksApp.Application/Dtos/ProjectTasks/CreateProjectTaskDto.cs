@@ -12,6 +12,6 @@ namespace TasksApp.Application.Dtos.ProjectTasks
         public string Title { get; set; }
         public string Details { get; set; }
         public DateTime expireDate { get; set; }
-        public Status Status { get; set; }
+        public Priority Priority { get; set; }
     }
 }
